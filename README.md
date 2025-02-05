@@ -11,19 +11,19 @@ This is a simple public API developed for the HNG12 internship Stage 1 backend t
 ## API Documentation  
 
 ### Endpoint  
-**GET** `https://hng1-3h1g.onrender.com`
+**GET** `https://hng1-3h1g.onrender.com/classify-number?number=<number>`
 
 ### Response Format  
 The API returns a JSON response with the following structure:  
 
 ```json
 {
-    "number": 371,
+    "number": 0,
     "is_prime": false,
-    "is_perfect": false,
-    "properties": ["armstrong", "odd"],
-    "digit_sum": 11,
-    "fun_fact": "371 is an Armstrong number because 3^3 + 7^3 + 1^ = 371"
+    "is_perfect": true,
+    "properties": ["string"],
+    "digit_sum": 0,
+    "fun_fact": "string"
 }
 ```
 
