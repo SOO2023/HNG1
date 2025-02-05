@@ -1,4 +1,4 @@
-# HNG12 Stage 0 Backend Task  
+# HNG12 Stage 1 Backend Task  
 
 ## Project Overview  
 This is a simple public API developed for the HNG12 internship Stage 1 backend task. The API provides mathematical properties about a number, properties such as:  
@@ -11,7 +11,7 @@ This is a simple public API developed for the HNG12 internship Stage 1 backend t
 ## API Documentation  
 
 ### Endpoint  
-**GET** `https://hng0-nvg7.onrender.com`
+**GET** `https://hng1-3h1g.onrender.com`
 
 ### Response Format  
 The API returns a JSON response with the following structure:  
