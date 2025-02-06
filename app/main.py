@@ -9,7 +9,7 @@ from app.cron_job import keep_alive
 
 app = FastAPI()
 scheduler = BackgroundScheduler()
-scheduler.add_job(keep_alive, "interval", seconds=20)
+scheduler.add_job(keep_alive, "interval", minutes=5)
 scheduler.start()
 
 
