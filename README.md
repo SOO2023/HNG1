@@ -11,7 +11,7 @@ This is a simple public API developed for the HNG12 internship Stage 1 backend t
 ## API Documentation  
 
 ### Endpoint  
-**GET** `https://hng1-3h1g.onrender.com/classify-number?number=<number>`
+**GET** `https://hng1-3h1g.onrender.com/api/classify-number?number=<number>`
 
 ### Response Format  
 The API returns a JSON response with the following structure:  
@@ -76,7 +76,7 @@ uvicorn app.main:app --port 8000
 ```
 
 ### 5: Test the API
-Open a browser and make a GET request to: `http://127.0.0.1:8000`
+Open a browser and make a GET request to: `http://127.0.0.1:8000/api/classify-number`
 
 ## Additional Resources
 

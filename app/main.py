@@ -13,7 +13,7 @@ scheduler.add_job(keep_alive, "interval", seconds=20)
 scheduler.start()
 
 
-@app.get("/classify-number", response_model=NumberInfoRead | ErrorRead)
+@app.get("/api/classify-number", response_model=NumberInfoRead | ErrorRead)
 async def get_number_info(number):
     async with AsyncClient() as client:
         response = await client.get(f"http://numbersapi.com/{number}/math?json=true")
