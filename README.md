@@ -68,7 +68,15 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 4: Start the FastAPI Application with Uvicorn
+### 4: Environment Variables
+
+To set up environment variables, create a copy of the `.env-example` file and rename it to `.env`:
+
+```bash
+cp .env-example .env
+```
+
+### 5: Start the FastAPI Application with Uvicorn
 Run the FastAPI application using Uvicorn.
 
 ```bash
