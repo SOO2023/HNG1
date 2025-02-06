@@ -3,9 +3,14 @@ from httpx import AsyncClient
 from fastapi.responses import JSONResponse
 from app.util import is_prime, is_perfect, get_property, digit_sum
 from app.schemas import NumberInfoRead, ErrorRead
+from apscheduler.schedulers.background import BackgroundScheduler
+from app.cron_job import keep_alive
 
 
 app = FastAPI()
+scheduler = BackgroundScheduler()
+scheduler.add_job(keep_alive, "interval", seconds=20)
+scheduler.start()
 
 
 @app.get("/classify-number", response_model=NumberInfoRead | ErrorRead)
